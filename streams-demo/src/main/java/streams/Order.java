@@ -7,9 +7,9 @@ import java.util.List;
 public class Order {
 
 
-    private String status;
-    private LocalDate orderDate;
-    private List<Product> products = new ArrayList<>();
+    private final String status;
+    private final LocalDate orderDate;
+    private final List<Product> products = new ArrayList<>();
 
 
     public Order(String status, LocalDate orderDate) {

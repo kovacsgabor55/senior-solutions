@@ -3,9 +3,9 @@ package streams;
 public class Product {
 
 
-    private String name;
-    private String category;
-    private double price;
+    private final String name;
+    private final String category;
+    private final double price;
 
     public Product(String name, String category, double price) {
         this.name = name;
