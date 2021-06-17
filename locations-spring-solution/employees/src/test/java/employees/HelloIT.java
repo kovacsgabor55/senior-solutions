@@ -7,13 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
- class HelloIT {
+class HelloIT {
     @Autowired
-     HelloController helloController;
+    HelloController helloController;
 
     @Test
-    void sayHello(){
-        String message= helloController.sayHello();;
+    void sayHello() {
+        String message = helloController.sayHello();
 
         assertThat(message).startsWith("Hello Spring Boot");
     }

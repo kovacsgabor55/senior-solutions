@@ -9,8 +9,8 @@ class HelloServiceTest {
 
     @Test
     void sayHello() {
-        HelloService helloService =new HelloService();
-        String message=helloService.sayHello();
+        HelloService helloService = new HelloService();
+        String message = helloService.sayHello();
 
         assertThat(message).startsWith("Hello");
     }
