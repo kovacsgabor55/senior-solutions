@@ -1,5 +1,5 @@
 package car;
 
-public enum Status {
+public enum Condition {
     EXCELLENT, NORMAL, BAD
 }

@@ -1,35 +1,39 @@
 package car;
 
-public class Car {
-    private String brand;
-    private String type;
+import java.util.List;
 
-    public Car(String brand, String type) {
+public class Car {
+    private final String brand;
+    private final String type;
+    private final int age;
+    private final Condition condition;
+    private final List<KmState> kmStates;
+
+    public Car(String brand, String type, int age, Condition condition, List<KmState> kmStates) {
         this.brand = brand;
         this.type = type;
+        this.age = age;
+        this.condition = condition;
+        this.kmStates = kmStates;
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public int getAge() {
+        return age;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", type='" + type + '\'' +
-                '}';
+    public Condition getCondition() {
+        return condition;
+    }
+
+    public List<KmState> getKmStates() {
+        return kmStates;
     }
 }

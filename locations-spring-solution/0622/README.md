@@ -16,7 +16,7 @@ Legyen egy `CarController` osztály mely szintén Spring komponens.
 Legyen még egy `HelloController` és `HelloService` osztályod is, mely a kezdő oldal feladatit oldja meg.
 
 Ezen struktúra segítségével oldd meg a következő feladatokat:
-+ Alkalmazás indításakor a böngészőben jelenjen meg az "Üdvölünk az oldalon" szöveg!
++ Alkalmazás indításakor a böngészőben jelenjen meg az "Üdvözlünk az oldalon" szöveg!
 + /cars url-n keresztül jelenjen meg az összes autó.
 + /types végponton keresztül jelenjenek meg a listában található márkák.
 
