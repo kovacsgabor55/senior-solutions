@@ -1,4 +1,4 @@
-package car;
+package bike;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,27 +10,27 @@ import java.util.Set;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-class CarControllerIT {
+class BikeControllerIT {
 
     @Autowired
-    CarController carController;
+    BikeController bikeController;
 
     @Test
     void getAllCarsIT() {
-        List<Car> result = carController.getAllCars();
+        List<Bike> result = bikeController.getAllBikes();
 
         assertThat(result)
-                .hasSize(2)
-                .extracting(Car::getBrand)
-                .contains("Suzuki", "Opel");
+                .hasSize(5)
+                .extracting(Bike::getBikeId)
+                .contains("FH676", "FH631");
     }
 
     @Test
     void getAllTypesIT() {
-        Set<String> result = carController.getAllBrands();
+        Set<String> result = bikeController.getAllUsers();
 
         assertThat(result)
-                .hasSize(2)
-                .contains("Suzuki", "Opel");
+                .hasSize(5)
+                .contains("US3434", "US336");
     }
 }
