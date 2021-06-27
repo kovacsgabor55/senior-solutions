@@ -1,0 +1,36 @@
+###
+GET http://localhost:8080/locations/
+Accept: application/json
+
+###
+GET http://localhost:8080/?prefix=mas
+Accept: application/json
+
+###
+GET http://localhost:8080/location/3
+Accept: application/json
+
+###
+POST http://localhost:8080/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "uj",
+  "lat": 24.5,
+  "lon": 25.9
+}
+
+###
+PUT http://localhost:8080/3
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "mdositott",
+  "lat": 84.58,
+  "lon": 67.85
+}
+
+###
+DELETE  http://localhost:8080/1

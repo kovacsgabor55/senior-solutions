@@ -21,10 +21,10 @@ class LocationsControllerTest {
 
     @Test
     void getLocations() {
-        when(locationsController.getLocations()).thenReturn("[Location{id=1, name='elso', ");
+        when(locationsController.getLocations().toString()).thenReturn("[Location(id=1, name=elso, ");
 
-        String message = locationsService.getLocations();
+        String message = locationsService.getLocations().toString();
 
-        assertThat(message).isEqualTo("[Location{id=1, name='elso', ");
+        assertThat(message).isEqualTo("[Location(id=1, name=elso, ");
     }
 }

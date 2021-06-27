@@ -15,8 +15,8 @@ class LocationsControllerIT {
 
     @Test
     void getLocations() {
-        String message = locationsController.getLocations();
+        String message = locationsController.getLocations().toString();
 
-        assertThat(message).startsWith("[Location{id=1, name='elso', ");
+        assertThat(message).startsWith("[LocationDto(id=1, name=elso, ");
     }
 }
