@@ -1,0 +1,25 @@
+POST http://localhost:8080/api/movies
+Content-Type: application/json
+
+{
+  "title": "Superman",
+  "length": 99
+}
+
+###
+POST http://localhost:8080/api/movies/2/rating
+Content-Type: application/json
+
+{
+  "rating": 5
+}
+
+###
+GET http://localhost:8080/api/movies
+Accept: application/json
+
+###
+GET http://localhost:8080
+
+###
+DELETE  http://localhost:8080/api/movies/1
