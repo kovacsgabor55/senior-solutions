@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeDto {
-    private Long id;
-    private String name;
+public class Violation {
+    private String field;
+    private String message;
 }
