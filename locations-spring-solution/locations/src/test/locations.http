@@ -34,3 +34,6 @@ Accept: application/json
 
 ###
 DELETE  http://localhost:8080/1
+
+###
+DELETE  http://localhost:8080/deleteall

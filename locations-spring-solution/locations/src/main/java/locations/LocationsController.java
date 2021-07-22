@@ -54,6 +54,12 @@ public class LocationsController {
         locationsService.deleteLocation(id);
     }
 
+    @DeleteMapping("/deleteall")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteAllLocation() {
+        locationsService.deleteAllLocation();
+    }
+
     @ExceptionHandler(LocationNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Problem> handledNotFound(LocationNotFoundException lnf) {
