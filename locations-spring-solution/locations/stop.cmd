@@ -1,2 +1,2 @@
 docker stop my-locations
-mvnw clean
+mvn clean
