@@ -12,6 +12,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "movies")
 public class Movie {
 
     @Id
@@ -23,10 +24,12 @@ public class Movie {
 
     public Movie(String title) {
         this.title = title;
-        this.ratings = new ArrayList<>();
     }
 
     public void addRatings(int rating) {
+        if (ratings == null) {
+            ratings = new ArrayList<>();
+        }
         ratings.add(rating);
     }
 }

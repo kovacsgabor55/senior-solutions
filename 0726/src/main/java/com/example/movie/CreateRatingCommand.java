@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class AddRatingCommand {
+public class CreateRatingCommand {
 
     private int rating;
 }

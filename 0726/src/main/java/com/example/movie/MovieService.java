@@ -18,7 +18,7 @@ public class MovieService {
 
     public MovieDto getMovie(long id) {
         return modelMapper.map(repository.findById(id)
-                        .orElseThrow(() -> new IllegalArgumentException("Book not fount: " + id)),
+                        .orElseThrow(() -> new IllegalArgumentException("Movie not fount: " + id)),
                 MovieDto.class);
     }
 
@@ -34,7 +34,7 @@ public class MovieService {
     }
 
     @Transactional
-    public MovieDto addRating(long id, AddRatingCommand command) {
+    public MovieDto addRating(long id, CreateRatingCommand command) {
         Movie movie = repository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Movie not found: " + id));
         movie.addRatings(command.getRating());

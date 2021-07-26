@@ -31,7 +31,7 @@ public class MovieController {
 
     @PostMapping("/{id}/rating")
     @ResponseStatus(HttpStatus.CREATED)
-    public MovieDto addRating(@PathVariable("id") long id, @RequestBody AddRatingCommand command) {
+    public MovieDto addRating(@PathVariable("id") long id, @RequestBody CreateRatingCommand command) {
         return service.addRating(id, command);
     }
 }
