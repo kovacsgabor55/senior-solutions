@@ -1,0 +1,25 @@
+### list all
+GET http://localhost:8080/api/movies/
+Accept: application/json
+
+### find id
+GET http://localhost:8080/api/movies/1
+Accept: application/json
+
+### create
+POST http://localhost:8080/api/movies/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "cim"
+}
+
+### rating id
+POST http://localhost:8080/api/movies/1/rating
+Content-Type: application/json
+Accept: application/json
+
+{
+  "rating": 2
+}
