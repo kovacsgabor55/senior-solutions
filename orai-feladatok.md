@@ -13,3 +13,4 @@ Kérlek jelöld be, hogy melyik gyakorlati feladatokat oldottad meg!
 * [ ] 2021.07.13. - Időpontfoglalás (`appointments-solution`)
 * [ ] 2021.07.20. - MeetingRooms JPA-val (`meetingrooms-jpa`)
 * [x] 07.26
+* [x] 07.27

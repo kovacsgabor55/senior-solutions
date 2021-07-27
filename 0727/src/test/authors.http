@@ -1,0 +1,29 @@
+###
+POST http://localhost:8080/api/authors
+Content-Type:  application/json
+Accept: application/json
+
+{
+  "name": "tolkien"
+}
+
+###
+GET  http://localhost:8080/api/authors
+Accept: application/json
+
+###
+GET  http://localhost:8080/api/authors/1
+Accept: application/json
+
+###
+POST http://localhost:8080/api/authors/1/books
+Content-Type:  application/json
+Accept: application/json
+
+{
+  "isbn": "123456",
+  "title": "Hobbit"
+}
+
+###
+DELETE http://localhost:8080/api/authors/1
